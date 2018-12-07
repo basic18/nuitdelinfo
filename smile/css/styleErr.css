@@ -1,0 +1,91 @@
+/*
+J'allais dire bonjours mais vue que c'est la nuit de l'info c'est plutôt BONSOIR. 
+Alors le CSS et nous c'est comme l'eau et l'huile, les deux sont utiles mais ne 
+font pas bon ménage.
+Donc on ne garantie ce code que 3 secondes, ce delais passé vous serez livré
+à vous même.
+*/
+
+
+/* Ce fut un beau corps à corps pour cette partie */
+body {
+	margin: 0;
+	padding: 0 !important;
+	overflow:hidden;
+}
+
+/* Alors je ne sais ABSOLUMENT pas quoi dire alors je vais dire coucou */
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #21007F;
+}
+
+/* On a fait manger l'html et le body pour les faires grossires */
+html, body{
+	width:100%;
+}
+
+/* C'était super simple de faire cette fonction... Une "cur" de santé :p */
+#cur {
+	position:absolute;
+	z-index:5;
+	width: 200px;
+	height: 200px;
+	transform-origin: 50% 50%;
+}
+
+main {
+	z-index:0;
+	text-align:center;
+	color:white;
+	font-family:calibri;
+	border-top-left-radius:50px;
+	border-bottom-right-radius:50px;
+	width:80%;
+	position:relative;
+	margin:auto;
+	padding:20px;
+}
+
+h1{
+	font-size: 5em;
+}
+
+h2{
+	font-size: 3em;
+}
+
+h3{
+	font-size: 1.3em;
+}
+
+.cercle {
+	position:absolute;
+	left: 0; 
+	right: 0; 
+	border-radius:45%;
+	margin-left: auto; 
+	margin-right: auto; 
+	height:50%;
+	width:100%;
+	bottom: -40%;
+	background-color:#AE3300;
+	z-index:0;
+	box-shadow: 0px -5px 15px #AE3300;
+}
+
+@-webkit-keyframes rotating {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+.rotating {
+	-webkit-animation: rotating 10s linear infinite;
+}

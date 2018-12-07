@@ -8,9 +8,23 @@ $(function () {
         $("#humidity").text(humidity + " % rh");
         $("#pression").text(pressure + " hPa");
         var now = new Date();
-        var formatted = now.getHours() + "h" + now.getMinutes() + ":" + now.getSeconds();
+        var formatted = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
         $("#datemaj").text(formatted);
 
     });
+
+    $.ajax({
+        type: 'GET',
+        url: 'https://www.midilibre.fr/lozere/rss.xml',
+        crossDomain: true,
+        dataType: 'jsonp',
+        success: parseXml
+    });
+
+    function parseXml(xml) {
+        $(xml).find('entry').each(function () {
+            $("#output").append($(this).find('title').text() + "<br />");
+        });
+    }
 
 });

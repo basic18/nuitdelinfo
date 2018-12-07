@@ -43,14 +43,12 @@ $("html").click(function (e) {
 
             $("#fusee").animate({
                 top: '-250px',
-            }, {duration : 600,
-		complete : function(){
-		window.location.href = "https://www.lemonde.fr/"; //Redirection similaire à un clic sur un lien
-		}});
+            }, 600);
+
+		url = "";
+      		$(location).attr("href", url);
         }
     });
-	
-	
 });
 
 $(function () {
