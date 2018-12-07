@@ -1,0 +1,60 @@
+body {
+	width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#fusee {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    z-index: 5;
+}
+
+@-webkit-keyframes droitDroite {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(15deg);
+    }
+}
+
+
+@-webkit-keyframes droitGauche {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(-15deg);
+    }
+}
+
+.rotateDroite {
+    transform: rotate(15deg);
+}
+
+.rotateGauche {
+    transform: rotate(-15deg);
+}
+
+.droitDroite {
+    -webkit-animation: droitDroite 1s 1s normal forwards;
+}
+
+.droitGauche {
+    -webkit-animation: droitGauche 1s 1s normal forwards;
+}
